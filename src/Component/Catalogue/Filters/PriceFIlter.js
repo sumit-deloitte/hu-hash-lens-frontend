@@ -1,15 +1,15 @@
 function PriceFilter() {
   return (
     <>
-      <div>
+      <div className="container">
         <label for="customRange2" class="form-label">
-          Price
+          Price: $40
         </label>
         <input
           type="range"
           class="form-range"
           min="0"
-          max="5"
+          max="40"
           value="5"
           id="customRange2"
         ></input>

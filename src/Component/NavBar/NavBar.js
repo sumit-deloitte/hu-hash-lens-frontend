@@ -2,7 +2,7 @@
 function Navigation() {
   return (
     <>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded border border-2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-2 bg-body rounded border border-2">
         <div class="container-fluid">
             <a class="navbar-brand font-weight-bold" href="/">Hash Lens</a>
             <div class="d-flex justify-content-between bg-white">

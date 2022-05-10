@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
 
-.card-title {
-  text-emphasis: 10;
-}
-
-.product-price {
-  color: rgb(78, 75, 75);
-}
-.product:hover {
-  transform: scale3d(1.2, 1.2, 1.2);
-  z-index: 999;
-}
-
 .search {
   position: relative;
   box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
@@ -36,28 +24,22 @@
 
 .search button {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  height: 50px;
+  top: 2px;
+  right: 2px;
   width: 110px;
+  height: 56px;
   background: black;
 }
 
 
 .white {
   color: #d6d4d4;
+  text-align: center;
 }
 
-
-.sidebar{
-    width: 20%;
-    padding: 10px;
-    margin: 0;
-    float: left;
-}
 .products{
-    width: 80%;
-    padding: 10px;
-    margin: 0;
-    float: right;
+  width: 80%;
+  padding: 10px;
+  margin: 0;
+  float: right;
 }
