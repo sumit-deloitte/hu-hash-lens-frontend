@@ -1,7 +1,7 @@
 import { Collapse } from "react-bootstrap";
 import { useState } from "react";
-
-function CollapseMenu() {
+import "./CollapseMenu.css";
+function CollapseMenu({ name, children }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -9,28 +9,22 @@ function CollapseMenu() {
       <div>
         <button
           type="button"
-          class=""
+          class="border-2 border border-white bg-white d-block click-div"
           onClick={() => setOpen(!open)}
           aria-controls="example-collapse-text"
           aria-expanded={open}
         >
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <p>Collapsible Group Item #1</p>
-              </h5>
-            </div>
+          <div class="card pt-2 mb-2">
+            <p>{name}</p>
           </div>
         </button>
 
         <Collapse in={open}>
-          <div id="example-collapse-text">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-            terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-            labore wes anderson cred nesciunt sapiente ea proident.
-          </div>
+          <div>{children}</div>
         </Collapse>
       </div>
+
+      <hr></hr>
     </>
   );
 }

@@ -1,0 +1,30 @@
+.products {
+  width: 80%;
+  padding: 10px;
+  margin: 0;
+  float: right;
+}
+
+.product{
+    margin-bottom: 2%;
+}
+.product:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+  z-index: 999;
+}
+.body-content{
+    text-align: center;
+}
+@media (min-width: 1700px) {
+  .col-width-xxl-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+@media (min-width: 1400px) {
+    .col-xl-3 {
+      flex: 0 0 auto;
+      width: 25%;
+    }
+  }
